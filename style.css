@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    text-align: right;
+    padding: 20px;
+    background-color: #eef2f3;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: right;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+td {
+    background-color: #f4f4f4;
+    transition: background-color 0.3s;
+}
+
+td:hover {
+    background-color: #d1e7dd;
+}
+
+input[type="file"],
+textarea,
+select {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+input[type="file"]:hover,
+textarea:hover,
+select:hover {
+    border-color: #008cba;
+}
+
+.file-label {
+    display: inline-block;
+    background-color: #008cba;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.file-label:hover {
+    background-color: #005f7f;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* تحسينات لتناسب جميع الشاشات */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button, .file-label {
+        font-size: 0.9em;
+    }
+
+    textarea {
+        font-size: 0.9em;
+    }
+
+    input[type="file"],
+    select {
+        font-size: 0.9em;
+    }
+}
+.file-message {
+    display: inline-block;
+    color: #28a745; /* لون الرسالة */
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+/* إعدادات عامة للجسم */
+body {
+    font-family: 'Cairo', sans-serif; /* استخدام خط مميز */
+    direction: rtl;
+    text-align: right;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+/* إعدادات الحاوية */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+/* إعدادات رأس الصفحة */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* إعدادات الجدول */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* إعدادات رؤوس الجدول */
+th, td {
+    padding: 10px;
+    text-align: right;
+    border: 1px solid #ccc;
+    font-weight: 600; /* تجعل النص في الرأس أكثر سمكًا */
+    background-color: #e9ecef; /* لون خلفية للرؤوس */
+}
+
+/* إعدادات العمود */
+th {
+    background-color: #007bff; /* لون خلفية مميز للرؤوس */
+    color: white; /* لون النص في الرأس */
+}
+
+/* إعدادات الخلايا */
+td {
+    font-size: 14px; /* حجم الخط */
+}
+
+/* إعدادات رسالة الملف */
+.file-message {
+    display: inline-block;
+    color: #28a745; /* لون الرسالة */
+    margin-right: 10px;
+    font-size: 0.9em;
+}

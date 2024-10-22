@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    width: 90%; /* استخدم نسبة مئوية بدلاً من max-width */
     margin: 0 auto;
     background-color: #ffffff;
     padding: 20px;
@@ -40,8 +40,8 @@ th, td {
 }
 
 th {
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #007bff; /* لون خلفية مميز للرؤوس */
+    color: white; /* لون النص في الرأس */
 }
 
 td {
@@ -121,67 +121,12 @@ button:hover {
     select {
         font-size: 0.9em;
     }
-}
-.file-message {
-    display: inline-block;
-    color: #28a745; /* لون الرسالة */
-    margin-right: 10px;
-    font-size: 0.9em;
-}
-/* إعدادات عامة للجسم */
-body {
-    font-family: 'Cairo', sans-serif; /* استخدام خط مميز */
-    direction: rtl;
-    text-align: right;
-    padding: 20px;
-    background-color: #f4f4f9;
+
+    table {
+        font-size: 14px; /* تعديل حجم الخط في الجدول */
+    }
 }
 
-/* إعدادات الحاوية */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s;
-}
-
-/* إعدادات رأس الصفحة */
-h1 {
-    text-align: center;
-    color: #333;
-}
-
-/* إعدادات الجدول */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-/* إعدادات رؤوس الجدول */
-th, td {
-    padding: 10px;
-    text-align: right;
-    border: 1px solid #ccc;
-    font-weight: 600; /* تجعل النص في الرأس أكثر سمكًا */
-    background-color: #e9ecef; /* لون خلفية للرؤوس */
-}
-
-/* إعدادات العمود */
-th {
-    background-color: #007bff; /* لون خلفية مميز للرؤوس */
-    color: white; /* لون النص في الرأس */
-}
-
-/* إعدادات الخلايا */
-td {
-    font-size: 14px; /* حجم الخط */
-}
-
-/* إعدادات رسالة الملف */
 .file-message {
     display: inline-block;
     color: #28a745; /* لون الرسالة */
